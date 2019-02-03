@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000005745990d77b2458f9b3757535419434a06b1a879fefe114a8ab62cc71d6")); 
+    (0, uint256("0x00000cc4eeca2c46278d9e80a2ac7b87ea7d6e598a6da9f76d09a87ffdbcbf4c")); 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1548881542, // * UNIX timestamp of last checkpoint block
-    1,          // * total number of transactions between genesis and last checkpoint
+    1549152865, // * UNIX timestamp of last checkpoint block
+    0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -91,12 +91,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xac;
-        pchMessageStart[1] = 0xd3;
-        pchMessageStart[2] = 0x2d;
-        pchMessageStart[3] = 0xd1;
+        pchMessageStart[0] = 0xbc;
+        pchMessageStart[1] = 0xc2;
+        pchMessageStart[2] = 0x2b;
+        pchMessageStart[3] = 0xc3;
 		vAlertPubKey = ParseHex("0317dc37db1011c0a162fc11335812349817392cdad2a12b85a0f841c4c48346bd85f45ec5c1d"); 
-		nDefaultPort = 10155;
+		nDefaultPort = 10121;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // mtap starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 2100000;
         nMaxReorganizationDepth = 100;
@@ -107,13 +107,13 @@ public:
         nTargetTimespan = 1 * 60; // mtap: 1 day
         nTargetSpacing = 1 * 60;  // mtap: 1 minute
         nLastPOWBlock = 200;
-        nMaturity = 20;
+        nMaturity = 6;
         nMasternodeCountDrift = 20;
         nMasternodeCollateralLimit = 2000;
         nModifierUpdateBlock = 615800;
         nMaxMoneyOut = 275000000  * COIN;
 
-        const char* pszTimestamp = "MTAP Coin is alive and it's trully for people! - 30/01/2019"; 
+        const char* pszTimestamp = "MTAP Coin is alive and it's trully for people! - 02/03/2019"; 
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -124,13 +124,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1548881542;
+        genesis.nTime = 1549152865;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1701090;
+        genesis.nNonce = 3098853;
 		
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000005745990d77b2458f9b3757535419434a06b1a879fefe114a8ab62cc71d6")); 
-        assert(genesis.hashMerkleRoot == uint256("0x5f7f710176fbe771eb6c073d6df9b8fa450472351123093064a34731a23cbe95"));
+        assert(hashGenesisBlock == uint256("0x00000cc4eeca2c46278d9e80a2ac7b87ea7d6e598a6da9f76d09a87ffdbcbf4c")); 
+        assert(genesis.hashMerkleRoot == uint256("0xb669a1c85f7c29abf1bc8290dea4610117da5770dff5348875a29ad31667c692"));
 
     	
 
@@ -150,7 +150,7 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = true;		// default false
+        fSkipProofOfWorkCheck = false;		// default false
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
