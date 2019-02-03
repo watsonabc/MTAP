@@ -93,8 +93,8 @@ build_triplet = x86_64-pc-linux-gnu
 host_triplet = x86_64-pc-linux-gnu
 noinst_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2)
 am__append_1 = bench_verify bench_sign bench_inv
-#am__append_2 = tests
-#TESTS = tests$(EXEEXT)
+am__append_2 = tests
+TESTS = tests$(EXEEXT)
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/build-aux/m4/libtool.m4 \
@@ -163,7 +163,7 @@ libsecp256k1_common_la_OBJECTS = $(am_libsecp256k1_common_la_OBJECTS)
 #am_libsecp256k1_common_la_rpath =
 am__EXEEXT_1 = bench_verify$(EXEEXT) \
 	bench_sign$(EXEEXT) bench_inv$(EXEEXT)
-#am__EXEEXT_2 = tests$(EXEEXT)
+am__EXEEXT_2 = tests$(EXEEXT)
 PROGRAMS = $(noinst_PROGRAMS)
 am__bench_inv_SOURCES_DIST = src/bench_inv.c
 am_bench_inv_OBJECTS =  \
@@ -191,10 +191,10 @@ bench_verify_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(bench_verify_LDFLAGS) $(LDFLAGS) -o $@
 am__tests_SOURCES_DIST = src/tests.c
-#am_tests_OBJECTS = tests-tests.$(OBJEXT)
+am_tests_OBJECTS = tests-tests.$(OBJEXT)
 tests_OBJECTS = $(am_tests_OBJECTS)
-#tests_DEPENDENCIES = $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_2)
+tests_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_2)
 tests_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(tests_LDFLAGS) $(LDFLAGS) -o $@
@@ -633,10 +633,10 @@ bench_inv_SOURCES = src/bench_inv.c
 bench_inv_LDADD = $(COMMON_LIB) $(SECP_LIBS)
 bench_inv_LDFLAGS = -static
 bench_inv_CPPFLAGS = $(SECP_INCLUDES)
-#tests_SOURCES = src/tests.c
-#tests_CPPFLAGS = -DVERIFY $(SECP_INCLUDES) $(SECP_TEST_INCLUDES)
-#tests_LDADD = $(COMMON_LIB) $(SECP_LIBS) $(SECP_TEST_LIBS)
-#tests_LDFLAGS = -static
+tests_SOURCES = src/tests.c
+tests_CPPFLAGS = -DVERIFY $(SECP_INCLUDES) $(SECP_TEST_INCLUDES)
+tests_LDADD = $(COMMON_LIB) $(SECP_LIBS) $(SECP_TEST_LIBS)
+tests_LDFLAGS = -static
 EXTRA_DIST = autogen.sh nasm_lt.sh
 all: all-am
 

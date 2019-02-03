@@ -112,29 +112,29 @@ am__append_11 = libbitcoin_wallet.a
 #am__append_14 = compat/glibc_compat.cpp \
 #	compat/glibcxx_compat.cpp
 #am__append_15 = secp256k1/libsecp256k1.la
-#am__append_16 = test/test_mtap test/bitcoin-util-test.py
-#am__append_17 = test/test_mtap
-#am__append_18 = \
-#	test/bctest.py \
-#	test/bitcoin-util-test.py \
-#	test/data/bitcoin-util-test.json \
-#	test/data/blanktx.hex \
-#	test/data/tt-delin1-out.hex \
-#	test/data/tt-delout1-out.hex \
-#	test/data/tt-locktime317000-out.hex \
-#	test/data/tx394b54bb.hex \
-#	test/data/txcreate1.hex \
-#	test/data/txcreate2.hex \
-#	test/data/txcreatesign.hex
+am__append_16 = test/test_mtap test/bitcoin-util-test.py
+am__append_17 = test/test_mtap
+am__append_18 = \
+	test/bctest.py \
+	test/bitcoin-util-test.py \
+	test/data/bitcoin-util-test.json \
+	test/data/blanktx.hex \
+	test/data/tt-delin1-out.hex \
+	test/data/tt-delout1-out.hex \
+	test/data/tt-locktime317000-out.hex \
+	test/data/tx394b54bb.hex \
+	test/data/txcreate1.hex \
+	test/data/txcreate2.hex \
+	test/data/txcreatesign.hex
 
-#am__append_19 = \
-#  test/accounting_tests.cpp \
-#  test/wallet_tests.cpp \
-#  test/rpc_wallet_tests.cpp
+am__append_19 = \
+  test/accounting_tests.cpp \
+  test/wallet_tests.cpp \
+  test/rpc_wallet_tests.cpp
 
-#am__append_20 = $(LIBBITCOIN_WALLET)
-#am__append_21 = $(ZMQ_LIBS)
-#am__append_22 = $(CLEAN_BITCOIN_TEST)
+am__append_20 = $(LIBBITCOIN_WALLET)
+am__append_21 = $(ZMQ_LIBS)
+am__append_22 = $(CLEAN_BITCOIN_TEST)
 am__append_23 = qt/mtap-qt
 am__append_24 = qt/libbitcoinqt.a
 am__append_25 = \
@@ -175,15 +175,15 @@ am__append_25 = \
 am__append_28 = $(LIBBITCOIN_WALLET)
 am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_30 = $(CLEAN_QT)
-#am__append_31 = qt/test/test_mtap-qt
-#am__append_32 = qt/test/test_mtap-qt
-#am__append_33 = qt/test/moc_paymentservertests.cpp
-#am__append_34 = \
-#  qt/test/paymentservertests.cpp
+am__append_31 = qt/test/test_mtap-qt
+am__append_32 = qt/test/test_mtap-qt
+am__append_33 = qt/test/moc_paymentservertests.cpp
+am__append_34 = \
+  qt/test/paymentservertests.cpp
 
-#am__append_35 = $(LIBBITCOIN_WALLET)
-#am__append_36 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
-#am__append_37 = $(CLEAN_BITCOIN_QT_TEST)
+am__append_35 = $(LIBBITCOIN_WALLET)
+am__append_36 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+am__append_37 = $(CLEAN_BITCOIN_QT_TEST)
 subdir = src
 SUBDIRS =
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -714,9 +714,9 @@ am_libbitcoinconsensus_la_rpath = -rpath \
 am__EXEEXT_1 = mtapd$(EXEEXT)
 am__EXEEXT_2 = mtap-cli$(EXEEXT) \
 	mtap-tx$(EXEEXT)
-#am__EXEEXT_3 = test/test_mtap$(EXEEXT)
+am__EXEEXT_3 = test/test_mtap$(EXEEXT)
 am__EXEEXT_4 = qt/mtap-qt$(EXEEXT)
-#am__EXEEXT_5 = qt/test/test_mtap-qt$(EXEEXT)
+am__EXEEXT_5 = qt/test/test_mtap-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
 am__mtap_cli_SOURCES_DIST = mtap-cli.cpp mtap-cli-res.rc
 #am__objects_10 = mtap-cli-res.$(OBJEXT)
@@ -787,38 +787,38 @@ am__qt_test_test_mtap_qt_SOURCES_DIST = qt/test/test_main.cpp \
 	qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-#am__objects_16 = qt/test/qt_test_test_mtap_qt-paymentservertests.$(OBJEXT)
-#am_qt_test_test_mtap_qt_OBJECTS = qt/test/qt_test_test_mtap_qt-test_main.$(OBJEXT) \
-#	qt/test/qt_test_test_mtap_qt-uritests.$(OBJEXT) \
-#	$(am__objects_1) $(am__objects_16)
-#am__objects_17 = qt/test/qt_test_test_mtap_qt-moc_paymentservertests.$(OBJEXT)
-#am__objects_18 = qt/test/qt_test_test_mtap_qt-moc_uritests.$(OBJEXT) \
-#	$(am__objects_17)
-#nodist_qt_test_test_mtap_qt_OBJECTS =  \
-#	$(am__objects_18)
+am__objects_16 = qt/test/qt_test_test_mtap_qt-paymentservertests.$(OBJEXT)
+am_qt_test_test_mtap_qt_OBJECTS = qt/test/qt_test_test_mtap_qt-test_main.$(OBJEXT) \
+	qt/test/qt_test_test_mtap_qt-uritests.$(OBJEXT) \
+	$(am__objects_1) $(am__objects_16)
+am__objects_17 = qt/test/qt_test_test_mtap_qt-moc_paymentservertests.$(OBJEXT)
+am__objects_18 = qt/test/qt_test_test_mtap_qt-moc_uritests.$(OBJEXT) \
+	$(am__objects_17)
+nodist_qt_test_test_mtap_qt_OBJECTS =  \
+	$(am__objects_18)
 qt_test_test_mtap_qt_OBJECTS = $(am_qt_test_test_mtap_qt_OBJECTS) \
 	$(nodist_qt_test_test_mtap_qt_OBJECTS)
-#am__DEPENDENCIES_6 =  \
-#	$(LIBBITCOIN_ZMQ) \
-#	$(am__DEPENDENCIES_1)
-#qt_test_test_mtap_qt_DEPENDENCIES =  \
-#	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
-#	$(am__append_35) $(am__DEPENDENCIES_6) \
-#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-#	$(LIBBITCOIN_UNIVALUE) \
-#	$(am__DEPENDENCIES_2) \
-#	$(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(LIBSECP256K1)
+am__DEPENDENCIES_6 =  \
+	$(LIBBITCOIN_ZMQ) \
+	$(am__DEPENDENCIES_1)
+qt_test_test_mtap_qt_DEPENDENCIES =  \
+	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
+	$(am__append_35) $(am__DEPENDENCIES_6) \
+	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+	$(LIBBITCOIN_UNIVALUE) \
+	$(am__DEPENDENCIES_2) \
+	$(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(LIBSECP256K1)
 qt_test_test_mtap_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) $(qt_test_test_mtap_qt_LDFLAGS) \
@@ -848,63 +848,63 @@ am__test_test_mtap_SOURCES_DIST = test/bignum.h \
 	test/data/script_invalid.json test/data/tx_invalid.json \
 	test/data/tx_valid.json test/data/sighash.json \
 	test/data/alertTests.raw
-#am__objects_19 = test/test_test_mtap-accounting_tests.$(OBJEXT) \
-#	test/test_test_mtap-wallet_tests.$(OBJEXT) \
-#	test/test_test_mtap-rpc_wallet_tests.$(OBJEXT)
-#am__objects_20 = test/test_test_mtap-allocator_tests.$(OBJEXT) \
-#	test/test_test_mtap-base32_tests.$(OBJEXT) \
-#	test/test_test_mtap-base58_tests.$(OBJEXT) \
-#	test/test_test_mtap-base64_tests.$(OBJEXT) \
-#	test/test_test_mtap-checkblock_tests.$(OBJEXT) \
-#	test/test_test_mtap-Checkpoints_tests.$(OBJEXT) \
-#	test/test_test_mtap-coins_tests.$(OBJEXT) \
-#	test/test_test_mtap-compress_tests.$(OBJEXT) \
-#	test/test_test_mtap-crypto_tests.$(OBJEXT) \
-#	test/test_test_mtap-DoS_tests.$(OBJEXT) \
-#	test/test_test_mtap-getarg_tests.$(OBJEXT) \
-#	test/test_test_mtap-hash_tests.$(OBJEXT) \
-#	test/test_test_mtap-key_tests.$(OBJEXT) \
-#	test/test_test_mtap-main_tests.$(OBJEXT) \
-#	test/test_test_mtap-mempool_tests.$(OBJEXT) \
-#	test/test_test_mtap-mruset_tests.$(OBJEXT) \
-#	test/test_test_mtap-multisig_tests.$(OBJEXT) \
-#	test/test_test_mtap-netbase_tests.$(OBJEXT) \
-#	test/test_test_mtap-pmt_tests.$(OBJEXT) \
-#	test/test_test_mtap-rpc_tests.$(OBJEXT) \
-#	test/test_test_mtap-sanity_tests.$(OBJEXT) \
-#	test/test_test_mtap-script_P2SH_tests.$(OBJEXT) \
-#	test/test_test_mtap-script_tests.$(OBJEXT) \
-#	test/test_test_mtap-scriptnum_tests.$(OBJEXT) \
-#	test/test_test_mtap-serialize_tests.$(OBJEXT) \
-#	test/test_test_mtap-sighash_tests.$(OBJEXT) \
-#	test/test_test_mtap-sigopcount_tests.$(OBJEXT) \
-#	test/test_test_mtap-skiplist_tests.$(OBJEXT) \
-#	test/test_test_mtap-test_mtap.$(OBJEXT) \
-#	test/test_test_mtap-timedata_tests.$(OBJEXT) \
-#	test/test_test_mtap-transaction_tests.$(OBJEXT) \
-#	test/test_test_mtap-uint256_tests.$(OBJEXT) \
-#	test/test_test_mtap-univalue_tests.$(OBJEXT) \
-#	test/test_test_mtap-util_tests.$(OBJEXT) \
-#	$(am__objects_19)
-#am_test_test_mtap_OBJECTS = $(am__objects_20) \
-#	$(am__objects_1) $(am__objects_1)
-#am__objects_21 = $(am__objects_1) $(am__objects_1)
-#nodist_test_test_mtap_OBJECTS = $(am__objects_21)
+am__objects_19 = test/test_test_mtap-accounting_tests.$(OBJEXT) \
+	test/test_test_mtap-wallet_tests.$(OBJEXT) \
+	test/test_test_mtap-rpc_wallet_tests.$(OBJEXT)
+am__objects_20 = test/test_test_mtap-allocator_tests.$(OBJEXT) \
+	test/test_test_mtap-base32_tests.$(OBJEXT) \
+	test/test_test_mtap-base58_tests.$(OBJEXT) \
+	test/test_test_mtap-base64_tests.$(OBJEXT) \
+	test/test_test_mtap-checkblock_tests.$(OBJEXT) \
+	test/test_test_mtap-Checkpoints_tests.$(OBJEXT) \
+	test/test_test_mtap-coins_tests.$(OBJEXT) \
+	test/test_test_mtap-compress_tests.$(OBJEXT) \
+	test/test_test_mtap-crypto_tests.$(OBJEXT) \
+	test/test_test_mtap-DoS_tests.$(OBJEXT) \
+	test/test_test_mtap-getarg_tests.$(OBJEXT) \
+	test/test_test_mtap-hash_tests.$(OBJEXT) \
+	test/test_test_mtap-key_tests.$(OBJEXT) \
+	test/test_test_mtap-main_tests.$(OBJEXT) \
+	test/test_test_mtap-mempool_tests.$(OBJEXT) \
+	test/test_test_mtap-mruset_tests.$(OBJEXT) \
+	test/test_test_mtap-multisig_tests.$(OBJEXT) \
+	test/test_test_mtap-netbase_tests.$(OBJEXT) \
+	test/test_test_mtap-pmt_tests.$(OBJEXT) \
+	test/test_test_mtap-rpc_tests.$(OBJEXT) \
+	test/test_test_mtap-sanity_tests.$(OBJEXT) \
+	test/test_test_mtap-script_P2SH_tests.$(OBJEXT) \
+	test/test_test_mtap-script_tests.$(OBJEXT) \
+	test/test_test_mtap-scriptnum_tests.$(OBJEXT) \
+	test/test_test_mtap-serialize_tests.$(OBJEXT) \
+	test/test_test_mtap-sighash_tests.$(OBJEXT) \
+	test/test_test_mtap-sigopcount_tests.$(OBJEXT) \
+	test/test_test_mtap-skiplist_tests.$(OBJEXT) \
+	test/test_test_mtap-test_mtap.$(OBJEXT) \
+	test/test_test_mtap-timedata_tests.$(OBJEXT) \
+	test/test_test_mtap-transaction_tests.$(OBJEXT) \
+	test/test_test_mtap-uint256_tests.$(OBJEXT) \
+	test/test_test_mtap-univalue_tests.$(OBJEXT) \
+	test/test_test_mtap-util_tests.$(OBJEXT) \
+	$(am__objects_19)
+am_test_test_mtap_OBJECTS = $(am__objects_20) \
+	$(am__objects_1) $(am__objects_1)
+am__objects_21 = $(am__objects_1) $(am__objects_1)
+nodist_test_test_mtap_OBJECTS = $(am__objects_21)
 test_test_mtap_OBJECTS = $(am_test_test_mtap_OBJECTS) \
 	$(nodist_test_test_mtap_OBJECTS)
 am__DEPENDENCIES_7 = libbitcoinconsensus.la
-#am__DEPENDENCIES_8 =  \
-#	$(am__DEPENDENCIES_1)
-#test_test_mtap_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
-#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-#	$(LIBBITCOIN_UNIVALUE) \
-#	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(LIBSECP256K1) $(am__append_20) \
-#	$(am__DEPENDENCIES_7) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_8)
+am__DEPENDENCIES_8 =  \
+	$(am__DEPENDENCIES_1)
+test_test_mtap_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
+	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+	$(LIBBITCOIN_UNIVALUE) \
+	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(LIBSECP256K1) $(am__append_20) \
+	$(am__DEPENDENCIES_7) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_8)
 test_test_mtap_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_mtap_LDFLAGS) \
@@ -1203,8 +1203,8 @@ am__set_TESTS_bases = \
   bases=`for i in $$bases; do echo $$i; done | sed 's/\.log$$//'`; \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
-#am__EXEEXT_6 = test/test_mtap$(EXEEXT) \
-#	test/bitcoin-util-test.py
+am__EXEEXT_6 = test/test_mtap$(EXEEXT) \
+	test/bitcoin-util-test.py
 TEST_SUITE_LOG = test-suite.log
 TEST_EXTENSIONS =  .test
 LOG_DRIVER = $(SHELL) $(top_srcdir)/build-aux/test-driver
@@ -1274,11 +1274,11 @@ BOOST_LIBS = -L/usr/lib/x86_64-linux-gnu -lboost_system -lboost_filesystem -lboo
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options
 BOOST_SYSTEM_LIB = -lboost_system
 BOOST_THREAD_LIB = -lboost_thread
-BOOST_UNIT_TEST_FRAMEWORK_LIB = 
+BOOST_UNIT_TEST_FRAMEWORK_LIB = -lboost_unit_test_framework
 BREW = 
 BUILD_QT = qt
-BUILD_TEST = 
-BUILD_TEST_QT = 
+BUILD_TEST = test
+BUILD_TEST_QT = test
 CC = gcc
 CCACHE = 
 CCDEPMODE = depmode=gcc3
@@ -1415,7 +1415,7 @@ SHELL = /bin/bash
 SSL_CFLAGS = 
 SSL_LIBS = -lssl
 STRIP = /usr/bin/strip
-TESTDEFS = 
+TESTDEFS =  -DBOOST_TEST_DYN_LINK
 TIFFCP = 
 UIC = /usr/lib/x86_64-linux-gnu/qt5/bin/uic
 USE_QRCODE = 
@@ -1855,65 +1855,65 @@ CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno \
 	zmq/*.gcno $(am__append_22) $(am__append_30) $(am__append_37)
 DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb $(am__append_18)
-#TEST_SRCDIR = test
-#TEST_BINARY = test/test_mtap$(EXEEXT)
-#JSON_TEST_FILES = \
-#  test/data/script_valid.json \
-#  test/data/base58_keys_valid.json \
-#  test/data/sig_canonical.json \
-#  test/data/sig_noncanonical.json \
-#  test/data/base58_encode_decode.json \
-#  test/data/base58_keys_invalid.json \
-#  test/data/script_invalid.json \
-#  test/data/tx_invalid.json \
-#  test/data/tx_valid.json \
-#  test/data/sighash.json
+TEST_SRCDIR = test
+TEST_BINARY = test/test_mtap$(EXEEXT)
+JSON_TEST_FILES = \
+  test/data/script_valid.json \
+  test/data/base58_keys_valid.json \
+  test/data/sig_canonical.json \
+  test/data/sig_noncanonical.json \
+  test/data/base58_encode_decode.json \
+  test/data/base58_keys_invalid.json \
+  test/data/script_invalid.json \
+  test/data/tx_invalid.json \
+  test/data/tx_valid.json \
+  test/data/sighash.json
 
-#RAW_TEST_FILES = test/data/alertTests.raw
-#GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
-#BITCOIN_TESTS = test/bignum.h \
-#	test/allocator_tests.cpp \
-#	test/base32_tests.cpp test/base58_tests.cpp \
-#	test/base64_tests.cpp \
-#	test/checkblock_tests.cpp \
-#	test/Checkpoints_tests.cpp \
-#	test/coins_tests.cpp \
-#	test/compress_tests.cpp \
-#	test/crypto_tests.cpp test/DoS_tests.cpp \
-#	test/getarg_tests.cpp test/hash_tests.cpp \
-#	test/key_tests.cpp test/main_tests.cpp \
-#	test/mempool_tests.cpp \
-#	test/mruset_tests.cpp \
-#	test/multisig_tests.cpp \
-#	test/netbase_tests.cpp test/pmt_tests.cpp \
-#	test/rpc_tests.cpp test/sanity_tests.cpp \
-#	test/script_P2SH_tests.cpp \
-#	test/script_tests.cpp \
-#	test/scriptnum_tests.cpp \
-#	test/serialize_tests.cpp \
-#	test/sighash_tests.cpp \
-#	test/sigopcount_tests.cpp \
-#	test/skiplist_tests.cpp test/test_mtap.cpp \
-#	test/timedata_tests.cpp \
-#	test/transaction_tests.cpp \
-#	test/uint256_tests.cpp \
-#	test/univalue_tests.cpp test/util_tests.cpp \
-#	$(am__append_19)
-#test_test_mtap_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-#test_test_mtap_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-#test_test_mtap_LDADD = $(LIBBITCOIN_SERVER) \
-#	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
-#	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-#	$(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) \
-#	$(LIBMEMENV) $(BOOST_LIBS) \
-#	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
-#	$(LIBSECP256K1) $(am__append_20) \
-#	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
-#	$(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(am__append_21)
-#test_test_mtap_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
-#nodist_test_test_mtap_SOURCES = $(GENERATED_TEST_FILES)
-#CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
+RAW_TEST_FILES = test/data/alertTests.raw
+GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
+BITCOIN_TESTS = test/bignum.h \
+	test/allocator_tests.cpp \
+	test/base32_tests.cpp test/base58_tests.cpp \
+	test/base64_tests.cpp \
+	test/checkblock_tests.cpp \
+	test/Checkpoints_tests.cpp \
+	test/coins_tests.cpp \
+	test/compress_tests.cpp \
+	test/crypto_tests.cpp test/DoS_tests.cpp \
+	test/getarg_tests.cpp test/hash_tests.cpp \
+	test/key_tests.cpp test/main_tests.cpp \
+	test/mempool_tests.cpp \
+	test/mruset_tests.cpp \
+	test/multisig_tests.cpp \
+	test/netbase_tests.cpp test/pmt_tests.cpp \
+	test/rpc_tests.cpp test/sanity_tests.cpp \
+	test/script_P2SH_tests.cpp \
+	test/script_tests.cpp \
+	test/scriptnum_tests.cpp \
+	test/serialize_tests.cpp \
+	test/sighash_tests.cpp \
+	test/sigopcount_tests.cpp \
+	test/skiplist_tests.cpp test/test_mtap.cpp \
+	test/timedata_tests.cpp \
+	test/transaction_tests.cpp \
+	test/uint256_tests.cpp \
+	test/univalue_tests.cpp test/util_tests.cpp \
+	$(am__append_19)
+test_test_mtap_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_mtap_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+test_test_mtap_LDADD = $(LIBBITCOIN_SERVER) \
+	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+	$(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) \
+	$(LIBMEMENV) $(BOOST_LIBS) \
+	$(BOOST_UNIT_TEST_FRAMEWORK_LIB) \
+	$(LIBSECP256K1) $(am__append_20) \
+	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
+	$(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(am__append_21)
+test_test_mtap_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+nodist_test_test_mtap_SOURCES = $(GENERATED_TEST_FILES)
+CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
 # mtap qt core #
 QT_TS = \
@@ -2219,34 +2219,34 @@ qt_mtap_qt_LIBTOOLFLAGS = --tag CXX
 #locale/foo.ts -> locale/foo.qm
 QT_QM = $(QT_TS:.ts=.qm)
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
-#TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp \
-#	$(am__append_33)
-#TEST_QT_H = \
-#  qt/test/uritests.h \
-#  qt/test/paymentrequestdata.h \
-#  qt/test/paymentservertests.h
+TEST_QT_MOC_CPP = qt/test/moc_uritests.cpp \
+	$(am__append_33)
+TEST_QT_H = \
+  qt/test/uritests.h \
+  qt/test/paymentrequestdata.h \
+  qt/test/paymentservertests.h
 
-#qt_test_test_mtap_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-#  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
+qt_test_test_mtap_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-#qt_test_test_mtap_qt_SOURCES =  \
-#	qt/test/test_main.cpp \
-#	qt/test/uritests.cpp $(TEST_QT_H) \
-#	$(am__append_34)
-#nodist_qt_test_test_mtap_qt_SOURCES = $(TEST_QT_MOC_CPP)
-#qt_test_test_mtap_qt_LDADD = $(LIBBITCOINQT) \
-#	$(LIBBITCOIN_SERVER) $(am__append_35) \
-#	$(am__append_36) $(LIBBITCOIN_CLI) \
-#	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
-#	$(LIBBITCOIN_CRYPTO) \
-#	$(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) \
-#	$(LIBMEMENV) $(BOOST_LIBS) \
-#	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
-#	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
-#	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
-#	$(MINIUPNPC_LIBS) $(LIBSECP256K1)
-#qt_test_test_mtap_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-#CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
+qt_test_test_mtap_qt_SOURCES =  \
+	qt/test/test_main.cpp \
+	qt/test/uritests.cpp $(TEST_QT_H) \
+	$(am__append_34)
+nodist_qt_test_test_mtap_qt_SOURCES = $(TEST_QT_MOC_CPP)
+qt_test_test_mtap_qt_LDADD = $(LIBBITCOINQT) \
+	$(LIBBITCOIN_SERVER) $(am__append_35) \
+	$(am__append_36) $(LIBBITCOIN_CLI) \
+	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
+	$(LIBBITCOIN_CRYPTO) \
+	$(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) \
+	$(LIBMEMENV) $(BOOST_LIBS) \
+	$(QT_DBUS_LIBS) $(QT_TEST_LIBS) \
+	$(QT_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) \
+	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
+	$(MINIUPNPC_LIBS) $(LIBSECP256K1)
+qt_test_test_mtap_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
 .SUFFIXES:
@@ -7502,7 +7502,7 @@ distdir: $(DISTFILES)
 	      || exit 1; \
 	  fi; \
 	done
-check-local:
+#check-local:
 check-am: all-am
 	$(MAKE) $(AM_MAKEFLAGS) check-TESTS check-local
 check: check-recursive
@@ -7697,34 +7697,34 @@ clean-local:
 	@test -f $(PROTOC)
 	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(abspath $(<D) $<)
 
-#$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
+$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-#mtap_test: $(TEST_BINARY)
+mtap_test: $(TEST_BINARY)
 
-#mtap_test_check: $(TEST_BINARY) FORCE
-#	$(MAKE) check-TESTS TESTS=$^
+mtap_test_check: $(TEST_BINARY) FORCE
+	$(MAKE) check-TESTS TESTS=$^
 
-#mtap_test_clean : FORCE
-#	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_mtap_OBJECTS) $(TEST_BINARY)
+mtap_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_mtap_OBJECTS) $(TEST_BINARY)
 
-#check-local:
-#	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
+check-local:
+	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
 
-#%.json.h: %.json
-#	@$(MKDIR_P) $(@D)
-#	@echo "namespace json_tests{" > $@
-#	@echo "static unsigned const char $(*F)[] = {" >> $@
-#	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
-#	@echo "};};" >> $@
-#	@echo "Generated $@"
+%.json.h: %.json
+	@$(MKDIR_P) $(@D)
+	@echo "namespace json_tests{" > $@
+	@echo "static unsigned const char $(*F)[] = {" >> $@
+	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
+	@echo "};};" >> $@
+	@echo "Generated $@"
 
-#%.raw.h: %.raw
-#	@$(MKDIR_P) $(@D)
-#	@echo "namespace alert_tests{" > $@
-#	@echo "static unsigned const char $(*F)[] = {" >> $@
-#	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
-#	@echo "};};" >> $@
-#	@echo "Generated $@"
+%.raw.h: %.raw
+	@$(MKDIR_P) $(@D)
+	@echo "namespace alert_tests{" > $@
+	@echo "static unsigned const char $(*F)[] = {" >> $@
+	@$(HEXDUMP) -v -e '8/1 "0x%02x, "' -e '"\n"' $< | $(SED) -e 's/0x  ,//g' >> $@
+	@echo "};};" >> $@
+	@echo "Generated $@"
 
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
@@ -7780,13 +7780,13 @@ moc_%.cpp: %.h
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-#test_mtap_qt : qt/test/test_mtap-qt$(EXEEXT)
+test_mtap_qt : qt/test/test_mtap-qt$(EXEEXT)
 
-#test_mtap_qt_check : qt/test/test_mtap-qt$(EXEEXT) FORCE
-#	$(MAKE) check-TESTS TESTS=$^
+test_mtap_qt_check : qt/test/test_mtap-qt$(EXEEXT) FORCE
+	$(MAKE) check-TESTS TESTS=$^
 
-#test_mtap_qt_clean: FORCE
-#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_mtap_qt_OBJECTS)
+test_mtap_qt_clean: FORCE
+	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_mtap_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

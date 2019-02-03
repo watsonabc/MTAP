@@ -8,8 +8,8 @@ Name: MTAP Coin</br>
 Ticker: MTAP</br>
 Algorithm: HashX11</br>
 Maximum Supply: 275,000,000 MTAP</br>
-Port=10155</br>
-Rpcport=10156</br>
+Port=10121</br>
+Rpcport=10122</br>
 Masternode Reward: 80%</br>
 Staking Reward: 20%</br>
 Masternode collateral:  4000 MTAP</br>
